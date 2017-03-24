@@ -1,5 +1,5 @@
 int GCD(int a, int b) {
-    while(b != 0) P{
+    while(b != 0) {
         int t = b;
         b = a % b;
         a = t;
@@ -7,4 +7,3 @@ int GCD(int a, int b) {
 
     return a;
 }
-
