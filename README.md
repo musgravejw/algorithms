@@ -1,5 +1,4 @@
 # algorithms
 ------------
-Euclid GCG
-
-Singly Linked List
+- Euclid GCG
+- Singly Linked List
