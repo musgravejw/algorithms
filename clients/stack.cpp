@@ -1,4 +1,9 @@
+#include <stdio.h>
 #include "../data_structures/03-stack.cpp"
+
+void printNode(Node *node) {
+  printf("%d\n", *(int*)node->getData());
+}
 
 int main() {
   int a = 1;
@@ -11,12 +16,9 @@ int main() {
   stack->push(&b);
   stack->push(&c);
 
-  //list->printList();
-
-  stack->pop();
-  stack->pop();
-
-  //list->printList();
+  printNode(stack->pop());  // 3
+  printNode(stack->pop());  // 2
+  printNode(stack->pop());  // 1
 
   return 0;
 }

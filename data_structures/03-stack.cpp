@@ -10,6 +10,7 @@ class Stack {
     }
 
 
+    // Add to head of list
     bool push(void *data) {
       Node *myNode = new Node(data);
 
@@ -21,6 +22,7 @@ class Stack {
     }
 
 
+    // Remove from head of list
     Node* pop() {
       Node *current;
 
