@@ -4,6 +4,7 @@ int main() {
   int a = 1;
   int b = 2;
   int c = 3;
+  int d = 4;
 
   List *list = new List();
 
@@ -17,6 +18,12 @@ int main() {
   list->addToTail(&b);
   list->addToTail(&c);
 
+  list->printList();
+
+  list->insertAtIndex(2, new Node(&d));
+  list->printList();
+
+  list->deleteAtIndex(1);
   list->printList();
 
   return 0;
