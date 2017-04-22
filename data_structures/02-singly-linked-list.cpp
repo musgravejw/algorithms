@@ -25,6 +25,19 @@ class List {
     }
 
 
+    Node* find(void *data) {
+      Node *current = this->head;
+
+      while (current != NULL) {
+        if (current->getData() == data) return current;
+
+        current = current->getNext();
+      }
+
+      return NULL;
+    }
+
+
     bool addToHead(void *data) {
       /*
             |-------------|     |-------------|
