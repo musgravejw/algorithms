@@ -10,6 +10,7 @@ class Queue {
     }
 
 
+    // Add to head of list
     bool enqueue(void *data) {
       Node *myNode = new Node(data);
 
@@ -21,11 +22,12 @@ class Queue {
     }
 
 
-    void* dequeue() {
+    // Remove from tail of list
+    Node* dequeue() {
       Node *previous = this->head;
       Node *current = this->head;
 
-      while (current != NULL) {
+      while (current->getNext() != NULL) {
         previous = current;
         current = current->getNext();
       }

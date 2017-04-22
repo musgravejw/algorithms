@@ -21,7 +21,7 @@ class Stack {
     }
 
 
-    void* pop() {
+    Node* pop() {
       Node *current;
 
       if (this->head != NULL) {
