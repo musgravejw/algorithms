@@ -2,7 +2,8 @@
 ------------
 Algorithm descriptions taken from Donald Knuth's The Art of Computer Programming
 
-- Euclid GCG
+- Euclid GCD
 - Singly Linked List
 - Stack
 - Queue
+- Topological Sorting
